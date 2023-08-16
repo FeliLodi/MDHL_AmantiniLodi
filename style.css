@@ -1,0 +1,101 @@
+/* Estilos para la página HTML */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    padding: 50px 15px 15px 50px
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    background: white;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav {
+    background-color: #565656;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    word-spacing: 10px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+.imagen {
+    display: flex; 
+    align-items: center; 
+}
+
+.imagen img {
+    width: 100px; 
+    margin-right: 15px; 
+}
+
+aside {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+div {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+figure {
+    margin: 10px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
