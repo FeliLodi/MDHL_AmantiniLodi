@@ -15,25 +15,19 @@ body {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-.nombre-logo{
-  margin: 0;
-  color: #333;
-  text-align: left;
-}
-
 .menu ul {
     list-style: none; 
     margin: 0;
     padding: 0;
     gap: 10px; 
     display: flex;
-}
-
-
+}  
+  
 .menu li {
+      
     display: inline;
 }
-
+  
 .menu a {
     text-decoration: none;
     color: black;
@@ -41,10 +35,10 @@ body {
     padding: 10px 20px; 
     border-radius: 5px; 
 }
-
+  
 .subtitulo{
     padding: 10px;
-    background-color:rgb(255, 236, 31) ;
+    background-color:rgb(255, 165, 31) ;
     text-align: center;
     color: #333
 }
@@ -107,7 +101,7 @@ img {
     height: 100vh; 
 }
 .menu a.active {
-    background-color: rgb(0, 194, 68); 
+    background-color: rgb(224, 244, 96); 
     color: black;
 }
 
@@ -122,7 +116,7 @@ img {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 20px;
-    line-height: 55px;
+    line-height: 53px;
 }
 
 .teams {
@@ -158,4 +152,76 @@ img {
 
 .tituloRules {
     text-align: center;
+}
+
+/* formulario */
+.custom-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .custom-form h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ff6f00;
+  }
+  
+  .custom-form p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #555;
+  }
+
+  /*casillas*/
+
+  .form-checkbox {
+    display: none;
+}
+
+.custom-radio {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.form-checkbox:checked + .custom-radio {
+    background-color: #ff7b00; 
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px; 
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
 }
