@@ -1,9 +1,9 @@
+
 document.addEventListener("DOMContentLoaded", function() {
     var contacto = document.getElementById('formmdhl');
   
     contacto.addEventListener('submit', (event) => {
       event.preventDefault();
-  
       var firstname = document.getElementById("firstname").value;
       var lastname = document.getElementById("lastname").value;
       var streetaddress = document.getElementById("streetaddress").value;
@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", function() {
         streetaddress: streetaddress,
         city: city,
         zipcode: zipcode,
-        birthdate: birthdate,
+        birthdate: birthdate
       };
-  
-      fetch('./cargar.php', {
+      
+      fetch('cargar.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -34,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function() {
       })
       .catch(error => {
         console.error(error);
-      });
+      }
+      
+      );
     });
   });

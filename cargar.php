@@ -21,8 +21,6 @@ if ($connection->connect_error) {
 // Verificar si los datos están presentes antes de intentar acceder a ellos
 $data = json_decode(file_get_contents('php://input'), true);
 
-if (!empty($data['firstname']) && !empty($data['lastname']) && !empty($data['streetaddress']) && !empty($data['city']) && !empty($data['zipcode']) && !empty($data['birthdate']) && !empty($data['id'])) {
-    
     $firstname = $data['firstname'];
     $lastname = $data['lastname'];
     $streetaddress = $data['streetaddress'];
@@ -43,6 +41,5 @@ if (!empty($data['firstname']) && !empty($data['lastname']) && !empty($data['str
             echo json_encode($response);
         }
     }
-}
     mysqli_close($connection);
 ?>
