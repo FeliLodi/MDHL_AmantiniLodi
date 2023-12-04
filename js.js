@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         birthdate: birthdate,
       };
   
-      fetch('./form.php', {
+      fetch('./cargar.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
